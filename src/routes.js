@@ -122,6 +122,11 @@ const Dashboard = Loadable({
   loading: Loading,
 });
 
+const Students = Loadable({
+  loader: () => import('./views/Students/Students'),
+  loading: Loading,
+});
+
 const CoreUIIcons = Loadable({
   loader: () => import('./views/Icons/CoreUIIcons'),
   loading: Loading,
@@ -188,6 +193,7 @@ const User = Loadable({
 const routes = [
   { path: '/', exact: true, name: 'Home', component: DefaultLayout },
   { path: '/dashboard', name: 'Dashboard', component: Dashboard },
+  { path: '/students', name: 'Students', component: Students },
   { path: '/theme', exact: true, name: 'Theme', component: Colors },
   { path: '/theme/colors', name: 'Colors', component: Colors },
   { path: '/theme/typography', name: 'Typography', component: Typography },

@@ -10,6 +10,15 @@ export default {
       },
     },
     {
+      name: 'Students',
+      url: '/students',
+      icon: 'icon-pencil',
+      badge: {
+        variant: 'info',
+        text: 'Spec',
+      },
+    },
+    {
       title: true,
       name: 'Theme',
       wrapper: {            // optional wrapper object
